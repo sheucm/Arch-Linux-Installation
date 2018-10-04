@@ -213,3 +213,14 @@
         - `sudo pacman -U noto-fonts-tc-20150617-1-any.pkg.tar.xz`
         - Finished Installing that ttf !
     
+# Install Chinese Keyboard
+- [Arch Fxitx](https://wiki.archlinux.org/index.php/Fcitx)
+- **Download traditional Keyboard**:
+    - fxitx
+    - fcitx-chewing 
+    - fcitx-table-extra 
+    - fcitx-ui-light
+    
+    ```bash
+    sudo pacman -S fcitx fcitx-chewing fcitx-table-extra fcitx-ui-light
+    ```
