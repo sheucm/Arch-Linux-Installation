@@ -203,14 +203,34 @@
 
 # Install Chinese Fonts
 - [Arch Fonts](https://wiki.archlinux.org/index.php/fonts)
-- **Download all Chinese Fonts !** The following is for example:
-    - download *adobe-source-han-sans-tw-fonts*: `$ sudo pacman -S adobe-source-han-sans-tw-fonts`
-    - If the package is not on arch repo, like *noto-fonts-tc* (there is AUR words after those kind of fonts):
-        - Click that link. In new page, copy the *Git Clone URL*
-        - clone it. `$ git clone https://aur.archlinux.org/noto-fonts-tc.git`
-        - `$ cd noto-fonts-tc`
-        - `makepkg -s`
-        - `sudo pacman -U noto-fonts-tc-20150617-1-any.pkg.tar.xz`
+- **Download all Chinese Fonts !** :
+    - adobe-source-han-sans-cn-fonts
+    - adobe-source-han-sans-tw-fonts
+    - adobe-source-han-serif-cn-fonts
+    - adobe-source-han-serif-tw-fonts
+    - wqy-microhei
+    - wqy-zenhei 
+    - wqy-bitmapfont
+    - ttf-arphic-ukai 
+    - ttf-arphic-uming
+    - opendesktop-fonts 
+    - ttf-hannom 
+    
+    ```bash
+    $ sudo pacman -S <font-package>
+    ```
+    
+- Need to manually install yourself:
+    - Manual Chinese font lists with its repo URL:
+        - [**ttf-tw**](https://aur.archlinux.org/packages/ttf-tw/): https://aur.archlinux.org/ttf-tw.git
+        - [**noto-fonts-sc**](https://aur.archlinux.org/packages/noto-fonts-sc/): https://aur.archlinux.org/noto-fonts-sc.git 
+        - [**noto-fonts-tc**](https://aur.archlinux.org/packages/noto-fonts-tc/): https://aur.archlinux.org/noto-fonts-tc.git 
+    - Install Steps:
+        - Copy repo URL
+        - Clone it to local. `$ git clone <repo-url>`
+        - Go into the directory. `$ cd <repo-directory>`
+        - Make package. `$ makepkg -s`
+        - Install the package. `$ sudo pacman -U <package_name>-any.pkg.tar.xz`
         - Reboot your arch. `$ reboot`
         - Finished Installing that ttf !
     
