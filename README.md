@@ -280,3 +280,12 @@ $ sudo pacman -S <package>
 - Add your favorite input methods
 - Done. (終於可以打中文了！！）
 
+# 設定時間
+如果發現右上角的時間是錯誤的，可以依下列指令說定時間：
+
+```bash
+# timedatectl set-time "yyyy-MM-dd hh:mm:ss"
+＄ timedatectl set-time "2018-10-204 17:56:54"
+```
+
+參考[Arch Time](https://wiki.archlinux.org/index.php/time)
