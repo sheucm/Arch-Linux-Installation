@@ -35,13 +35,13 @@
     - Partition Type: p
     - Partition Number: (default, press enter)
     - First sector: (default, press enter)
-    - Last sector: +200M
+    - Last sector: +200M （至少200）
 - 此時`p`，可以看到新的分割顯示在螢幕上。
 - 再按`n`來新增swap用的分割區：
     - Partition Type: p
     - Partition Number: (default, press enter)
     - First sector: (default, press enter)
-    - Last sector: +1G (大部分人建議磁碟容量*10%)
+    - Last sector: +2G (大部分人建議為ram大小*150%，假設8G ram，swap就是設12G)
 - 再按`n`來新增root用的分割區：
     - Partition Type: p
     - Partition Number: (default, press enter)
@@ -54,7 +54,7 @@
     - Last sector: (default, press enter)
 - 此時，按下`p`可以看到已完美分割好的分割區。
 - 按下`w`來儲存所有變更。注意：這將永遠抹除磁碟資料。
-- 打上指令`lsblk`，這時候可以看到sda1、sda2、sda3、sda4。而且可以看到它們的容量分別是200M、1G、25G、剩餘容量。
+- 打上指令`lsblk`，這時候可以看到sda1、sda2、sda3、sda4。而且可以看到它們的容量分別是200M、2G、25G、剩餘容量。
 - 再來要對sda1、sda3、sda4安裝file system：
     - 打上指令`mkfs.ext4 /dev/sda1`
     - 打上指令`mkfs.ext4 /dev/sda3`
@@ -93,7 +93,7 @@
 - 啟動network manager。打上指令`systemctl enable NetworkManager`
 - 安裝grub，它是一種bootloader。
     - 打上指令`pacman -S grub`
-    - 打上指令`grub-install -target=i386-pc /dev/sda` (注意：不是sda1，也不是sda2…)
+    - 打上指令`grub-install --target=i386-pc /dev/sda` (注意：不是sda1，也不是sda2…)
     - 如果沒有error的話，再來產生grub config檔，打上指令`grub-mkconfig -o /boot/grub/grub.cfg`
 
 ### Part 3: 設定
