@@ -211,6 +211,7 @@
 - gedit (文字編輯器）
 - wget
 - unzip
+- firefox
 
 ```bash
 $ sudo pacman -S <package>
