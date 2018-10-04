@@ -195,11 +195,26 @@
     - 拖放：雙向
 - 完成
 
-# 其它安裝
-- git安裝：打入指令`sudo pacman -S git`
-- [chrome瀏覽器安裝](https://linuxhint.com/install-google-chrome-on-arch-linux/)
-- 文字編輯器安裝gedit：打入指令`sudo pacman -S gedit`
+# 安裝瀏覽器
+- 這裡以安裝chrome為例。
+- [參考文章](https://linuxhint.com/install-google-chrome-on-arch-linux/)
+- Requirements: 要安裝git
+- 安裝步驟：
+    - `$ git clone https://aur.archlinux.org/google-chrome.git`
+    - `$ cd google-chrome/`
+    - `$ makepkg -s`
+    - `$ sudo pacman -U google-chrome-63.0.3239.108-1-x86_64.pkg.tar.xz`
+    - 安裝完畢，接下來按左上角的Application -> Internet -> Google Chrome，就能開始瀏覽器。
 
+# 其它常用安裝
+- git
+- gedit (文字編輯器）
+- wget
+- unzip
+
+```bash
+$ sudo pacman -S <package>
+```
 
 # Install Chinese Fonts
 - [Arch Fonts](https://wiki.archlinux.org/index.php/fonts)
