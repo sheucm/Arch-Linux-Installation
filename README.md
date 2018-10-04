@@ -211,17 +211,35 @@
         - `$ cd noto-fonts-tc`
         - `makepkg -s`
         - `sudo pacman -U noto-fonts-tc-20150617-1-any.pkg.tar.xz`
-        - Reboot your arch
+        - Reboot your arch. `$ reboot`
         - Finished Installing that ttf !
     
 # Install Chinese Keyboard
 - [Arch Fxitx](https://wiki.archlinux.org/index.php/Fcitx)
+- Other Article: [Installing fcitx](http://echoyun.com/2017/10/02/installing-fcitx-chinese-ime-arch-linux/)
+- Requirements: Chinese fonts should be installed.
 - **Download traditional Keyboard**:
     - fxitx
     - fcitx-chewing 
-    - fcitx-table-extra 
-    - fcitx-ui-light
+    - fcitx-table-extra （if you want to use [Boshiamy](https://en.wikipedia.org/wiki/Boshiamy_method))
+    - fcitx-im  
+    - fcitx-configtool
     
     ```bash
-    sudo pacman -S fcitx fcitx-chewing fcitx-table-extra fcitx-ui-light
+    $ sudo pacman -S fcitx fcitx-chewing fcitx-table-extra fcitx-im fcitx-configtool
     ```
+- Set *.xinitrc* file:
+    - `$ sudo vim /root/.xinitrc`
+    - Edit like this:
+    
+    ```
+    # .xprofile or .xinitrc
+    export GTK_IM_MODULE=fcitx
+    export QT_IM_MODULE=fcitx
+    export XMODIFIERS=@im=fcitx
+    ```
+- Reboot your arch. `$ reboot`
+- Open fcitx-configtool. `$ fcitx-configtool`
+- Add your favorite input methods
+- Done. (終於可以打中文了！！）
+
