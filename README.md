@@ -238,7 +238,7 @@
 - [Arch Fxitx](https://wiki.archlinux.org/index.php/Fcitx)
 - Other Article: [Installing fcitx](http://echoyun.com/2017/10/02/installing-fcitx-chinese-ime-arch-linux/)
 - Requirements: Chinese fonts should be installed.
-- **Download traditional Keyboard**:
+- **Download traditional Chinese Keyboard**:
     - fxitx
     - fcitx-chewing 
     - fcitx-table-extra （if you want to use [Boshiamy](https://en.wikipedia.org/wiki/Boshiamy_method))
