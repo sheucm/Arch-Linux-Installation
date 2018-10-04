@@ -211,6 +211,7 @@
         - `$ cd noto-fonts-tc`
         - `makepkg -s`
         - `sudo pacman -U noto-fonts-tc-20150617-1-any.pkg.tar.xz`
+        - Reboot your arch
         - Finished Installing that ttf !
     
 # Install Chinese Keyboard
