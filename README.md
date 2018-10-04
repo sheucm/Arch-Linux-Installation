@@ -199,3 +199,17 @@
 - git安裝：打入指令`sudo pacman -S git`
 - [chrome瀏覽器安裝](https://linuxhint.com/install-google-chrome-on-arch-linux/)
 - 文字編輯器安裝gedit：打入指令`sudo pacman -S gedit`
+
+
+# Install Chinese Fonts
+- [Arch Fonts](https://wiki.archlinux.org/index.php/fonts)
+- **Download all Chinese Fonts !** The following is for example:
+    - download *adobe-source-han-sans-tw-fonts*: `$ sudo pacman -S adobe-source-han-sans-tw-fonts`
+    - If the package is not on arch repo, like *noto-fonts-tc* (there is AUR words after those kind of fonts):
+        - Click that link. In new page, copy the *Git Clone URL*
+        - clone it. `$ git clone https://aur.archlinux.org/noto-fonts-tc.git`
+        - `$ cd noto-fonts-tc`
+        - `makepkg -s`
+        - `sudo pacman -U noto-fonts-tc-20150617-1-any.pkg.tar.xz`
+        - Finished Installing that ttf !
+    
