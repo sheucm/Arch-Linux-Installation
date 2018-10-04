@@ -203,7 +203,7 @@
 
 # Install Chinese Fonts
 - [Arch Fonts](https://wiki.archlinux.org/index.php/fonts)
-- **Download all Chinese Fonts !** :
+- **Download all following Chinese Fonts !** :
     - adobe-source-han-sans-cn-fonts
     - adobe-source-han-sans-tw-fonts
     - adobe-source-han-serif-cn-fonts
@@ -233,6 +233,7 @@
         - Install the package. `$ sudo pacman -U <package_name>-any.pkg.tar.xz`
         - Reboot your arch. `$ reboot`
         - Finished Installing that ttf !
+- Reboot your arch. `$ reboot`
     
 # Install Chinese Keyboard
 - [Arch Fxitx](https://wiki.archlinux.org/index.php/Fcitx)
