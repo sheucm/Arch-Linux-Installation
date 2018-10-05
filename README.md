@@ -396,6 +396,9 @@ $ sudo pacman -S <package>
     ```
 
     - 檢查 `$ ls /mnt/system`
+    - `$ lsblk`，可能會看到sda1~sda4的MOUNTPOINT欄都有值。 (不確定)
+    - 離開mount，打上指令`$ umount -R /mnt`
+    - 此時再 `$ lsblk` 一次，可能會看到只有sda2的MOUNTPOINT欄有值。 (不確定)
     - 關機 `$ shutdown now`
     - 移除iso，並重開arch。
     - 完成
