@@ -396,11 +396,12 @@ $ sudo pacman -S <package>
     $ rsync -aAXv --delete --exclude="lost+found" /mnt/usb/ /mnt/system
     ```
     
-    - 檢查 `$ ls /mnt/system`
+    - 檢查 `$ ls /mnt/system` 內容是否還原到。
     - 離開mount：
         - `$ lsblk`，可能會看到sda1~sda4的MOUNTPOINT欄都有值。 (不確定)
         - 打上指令`$ umount -R /mnt`
         - 此時再 `$ lsblk` 一次，可能會看到只有sda2的MOUNTPOINT欄有值。 (不確定)
     - 關機 `$ shutdown now`
     - 移除iso，並重開arch。
+    - 此時arch的狀態，便是還原點的狀態。
     - 完成
