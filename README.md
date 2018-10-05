@@ -195,6 +195,14 @@
     - 拖放：雙向
 - 完成
 
+# VirtualBox插入usb
+- 下載[VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads)並安裝
+- 重開virtualbox
+- 對其虛擬機器按"設定值" -> "USB"，選擇"*USB 3.0 (xHCI) 控制器*"。(如果是usb2.0就選擇2.0的)
+- 開機
+- 在視窗上方的選單中，點選"裝置" -> "USB"，選擇自己插入的usb裝置。如此一來，就好比一個usb插入了這台虛擬機器。
+- 檢查：打開終端機，打上指令`$ lsblk`，如果有看到類似sdb、sdc等，看一下容量大小是不是自己的usb大小，是的話就沒錯了。
+
 # 安裝瀏覽器
 - 這裡以安裝chrome為例。
 - [參考文章](https://linuxhint.com/install-google-chrome-on-arch-linux/)
@@ -321,4 +329,17 @@ $ sudo pacman -S <package>
 - 測試：
     - 喇叭聲音：到youtube測試
     - 麥克風聲音：[Microphone Test](https://www.onlinemictest.com/)
+    
+# 安裝usb介面
+- 參考[Udisks - ArchWiki](https://wiki.archlinux.org/index.php/Udisks)
+- Requirements: 已安裝Desktop GUI
+- 步驟：
+    - 下載[udisk2](https://www.archlinux.org/packages/?name=udisks2)：`$ sudo pacman -U udisks2`。
+    - 打上指令`$ lsblk`，來看usb裝置是在哪個磁區編號。假設usb裝置是在/dev/sdb：
+    - mount usb: 打上指令`$ udisksctl mount -b /dev/sdb1`
+    - unmount usb: 打上指令`$ udisksctl unmount -b /dev/sdb1`
+    - 打開File Manager，在最左邊的DEVICES區就能看到自己的usb裝置。
+    - 完成。
+    
+補充：目前還不知道怎麼使它自動mount usb裝置的方法。
     
