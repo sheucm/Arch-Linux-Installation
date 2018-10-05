@@ -290,3 +290,35 @@ $ sudo pacman -S <package>
 ```
 
 參考[Arch Time](https://wiki.archlinux.org/index.php/time)
+
+
+# 設定音訊輸出與麥克風輸入
+- 參考文件
+    - [Arch - Sound system](https://wiki.archlinux.org/index.php/sound_system)
+    - [Arch - Advanced Linux Sound Architecture](https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture#Unmuting_the_channels)
+    - [Arch - Advanced Linux Sound Architecture/Troubleshooting](https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture/Troubleshooting#Microphone)
+- 說明：處理音訊是Alsa Linux Kernal，它是內建的不用安裝，那我們指需要安裝它的utils，且預設是靜音，在步驟中會說明怎麼關閉靜音。
+- 步驟：
+    - 安裝alsa utils: `$ sudo pacman -S alsa-utils`。此時就會有兩個utilities，分別是*alsamixer*和*amixer*。
+    - 利用alsamixer來取消靜音：`$ alsamixer`
+    - 截一下官方文件說明：
+    
+    ```
+    The MM label below a channel indicates that the channel is muted, and 00 indicates that it is open.
+
+    Scroll to the Master and PCM channels with the ← and → keys and unmute them by pressing the m key.
+
+    Use the ↑ key to increase the volume and obtain a value of 0 dB gain. The gain can be found in the upper left next to the Item: field.
+    ```
+    
+    - 對Master按m，然後按上下鍵來調整音量。
+    - 對HeadPhone按m，然後按上下鍵來調整音量。
+    - 對Front Mic和Front按m，然後按上下鍵來調整音量。
+    - 對Rear Mic按m，然後按上下鍵來調整音量。
+    - 按f4進入Capture標籤，對兩個Capture按下Space鍵，並使用上下鍵來調整收音量。
+    - Input Source的地方 （有兩個）按上下鍵改成Front Mic
+    - 按Esc離開設定
+- 測試：
+    - 喇叭聲音：到youtube測試
+    - 麥克風聲音：[Microphone Test](https://www.onlinemictest.com/)
+    
