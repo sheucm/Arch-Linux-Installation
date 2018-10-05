@@ -212,6 +212,7 @@
 - wget
 - unzip
 - firefox
+- [deepin-screenshot](https://www.archlinux.org/packages/?name=deepin-screenshot) (screenshot tool)
 
 ```bash
 $ sudo pacman -S <package>
