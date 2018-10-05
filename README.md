@@ -371,6 +371,7 @@ $ sudo pacman -S <package>
         - 其它參數的解釋，可以參考影片教學。
     - 真正備份到usb：確定列出備份的清單沒問題，就將*--dry-run*拿掉開始吧!
     - 打開usb資料夾，檢查是否都有備份進去。
+    - unmount usb: `$ udisksctl unmount -b /dev/sdb1`。
     
 - 還原步驟：
     - 重開機，安裝arch iso，並插入usb。
