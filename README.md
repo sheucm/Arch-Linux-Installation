@@ -381,7 +381,10 @@ $ sudo pacman -S <package>
         - root: /dev/sda3
         - home: /dev/sda4
         - usb: /dev/sdb1
-    - Mount system： `$ mount /dev/sda3 /mnt/system`
+    - Mount system： 
+        - `$ mount /dev/sda3 /mnt/system`
+        - `$ mount /dev/sda4 /mnt/system/home`
+        - `$ mount /dev/sda1 /mnt/system/boot`
     - Mount usb： `$ mount /dev/sdb1 /mnt/usb`
     - 檢查：
         - `$ ls /mnt/system`
