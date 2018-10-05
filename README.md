@@ -343,3 +343,56 @@ $ sudo pacman -S <package>
     
 補充：目前還不知道怎麼使它自動mount usb裝置的方法。
     
+# 備份與還原
+- 文件參考：[rsync - ArchWiki](https://wiki.archlinux.org/index.php/rsync)
+- 影片教學參考：[Backup and Restore Your Linux System with rsync](https://www.youtube.com/watch?v=oS5uH0mzMTg) :100: 
+- 事前準備：
+    - [格式為Ext4的usb](http://www.eassos.com/how-to/how-to-format-a-flash-drive.php)。
+- 備份步驟：
+    - arch開機，並插入usb
+    - `$ lsblk`，來看usb磁區(我的是/dev/sdb1)
+    - mount usb，`$ udisksctl mount -b /dev/sdb1`
+    - 備份測試：
+    
+    ```bash
+    $ sudo rsync -aAXv --delete --dry-run \
+    --exclude=/dev/* --exclude=/proc/* \
+    --exclude=/sys/* --exclude=/tmp/* --exclude=/run/* --exclude=/mnt/* \
+    --exclude=/media/* --exclude="swapfile" --exclude="lost+found" \
+    --exclude=".cache" --exclude="Downloads" --exclude=".VirtualBoxVMs" \
+    --exclude=".ecryptfs" \
+    /source /destination
+    ```
+    
+    - 解釋備份測試指令：
+        - /source為要備份的根目錄：取代為`/`。
+        - /destination為備份到的地方：取代為`/run/media/eric/my_usb`
+        - --dry-run。表示測試階段，還未真的寫入usb。測試階段，在console會印出要備份的檔案，可以在最後面加上`>> log.txt`，來看要備份的檔案是否有誤。
+        - 其它參數的解釋，可以參考影片教學。
+    - 真正備份到usb：確定列出備份的清單沒問題，就將*--dry-run*拿掉開始吧!
+    - 打開usb資料夾，檢查是否都有備份進去。
+    
+- 還原步驟：
+    - 重開機，安裝arch iso，並插入usb。
+    - 開機後，畫面會停在iso command line，打上`$ ls`，應該只會看到install.txt。
+    - 創兩個資料夾：`$ mkdir /mnt/system /mnt/usb`
+    - `$ lsblk`，檢查是否存在usb，並看一下各磁區編號。例：
+        - boot: /dev/sda1
+        - root: /dev/sda3
+        - home: /dev/sda4
+        - usb: /dev/sdb1
+    - Mount system： `$ mount /dev/sda3 /mnt/system`
+    - Mount usb： `$ mount /dev/sdb1 /mnt/usb`
+    - 檢查：
+        - `$ ls /mnt/system`
+        - `$ ls /mnt/usb`
+    - 還原：
+    
+    ```bash
+    $ rsync -aAXv --delete --exclude="lost+found" /mnt/usb/ /mnt/system
+    ```
+
+    - 檢查 `$ ls /mnt/system`
+    - 關機 `$ shutdown now`
+    - 移除iso，並重開arch。
+    - 完成
