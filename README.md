@@ -410,3 +410,55 @@ $ sudo pacman -S <package>
     - 移除iso，並重開arch。
     - 此時arch的狀態，便是還原點的狀態。
     - 完成
+
+
+# 安裝Nvidia 3D 加速 Driver
+
+參考文件：
+- [NVIDIA - ArchWiki](https://wiki.archlinux.org/index.php/NVIDIA)
+- [Easiest way to Install Nvidia 3D Graphics acceleration driver on ArchLinux](https://computingforgeeks.com/easiest-way-to-install-nvidia-3d-graphics-acceleration-driver-on-archlinux/)
+
+
+安裝驅動前，要先將顯卡裝上主機上。
+
+打上指令來確定一下：
+
+```bash
+$ lspci -k | grep -A 2 -E "(VGA|3D)"
+```
+
+最後一行應該會顯示像這樣：
+
+```bash
+Kernel driver in use: nouveau
+```
+
+- 如果沒看到自己顯卡的名字，表示你沒裝好。
+- 如果是顯示nvidia，那應該你已經安裝過nvidia驅動了，那本篇就可以跳過。
+
+[nouveau](https://wiki.archlinux.org/index.php/Nouveau)是nvidia通用顯卡驅動。
+但是我們不要它，因為如果要用到cuda gup硬解加速運算的話，
+要用到nvidia-driver系統的。並且要將原本預設的nouveau driver加入黑名單。
+幸好已經有人整理出安裝流程。
+
+那開始準備進入安裝步驟：
+- 系統總套件更新。`$ sudo pacman -Syyu`
+- 安裝nvidia驅動。`$ sudo pacman -S nvidia nvidia-utils nvidia-settings xorg-server-devel opencl-nvidia`
+- 檢查nouveau是否已經被加入黑名單。`$ cat /usr/lib/modprobe.d/nvidia.conf`
+    - 正常要顯示`blacklist nouveau`
+    - 如果沒有的話，請將`blacklist nouveau`文字加入到那個檔案。
+    - 補充：正常來說，安裝nvidia驅動後，它會自己將nouveau加入黑名單。並且也不用自己做*nvidia-config*來自動產生*xorg.conf*檔案。
+- 重新開機。`$ reboot`
+- 安裝完畢。
+
+監控：
+- 監控GPU狀態。`$ nvidia-smi`
+- 監空GPU溫度。`$ nvidia-smi -q -d TEMPERATURE`
+
+檢查Direct rendering是否啟動且運作正常：
+- 安裝[glxinfo](https://aur.archlinux.org/packages/glxinfo/)
+    - `$ git clone https://aur.archlinux.org/glxinfo.git`
+    - `$ cd glxinfo`
+    - `$ makepkg -s`
+    - `$ sudo pacman -U glxinfo-8.4.0-1-x86_64.pkg.tar.xz`
+- 檢查。`$ glxinfo | grep direct`。第一行會顯示*direct rendering: Yes*，那就對了。
