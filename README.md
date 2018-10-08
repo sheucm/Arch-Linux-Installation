@@ -173,6 +173,7 @@
 - 關閉：打上指令`sudo systemctl stop <service>`
 
 # 系統總更新
+更新所有使用從官方下載的套件。    
 打上指令`$ sudo pacman -Syyu`。
 
 # .profile或.bash_profile
