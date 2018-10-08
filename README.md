@@ -434,7 +434,7 @@ Kernel driver in use: nouveau
 ```
 
 - 如果沒看到自己顯卡的名字，表示你沒裝好。
-- 如果是顯示nvidia，那應該你已經安裝過nvidia驅動了，那本篇就可以跳過。
+- 如果不是顯示nouveau，而是nvidia，那你應該已經安裝過nvidia驅動了，那本章內容就可以跳過。
 
 [nouveau](https://wiki.archlinux.org/index.php/Nouveau)是nvidia通用顯卡驅動。
 但是我們不要它，因為如果要用到cuda gup硬解加速運算的話，
