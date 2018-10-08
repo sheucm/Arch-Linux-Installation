@@ -334,7 +334,7 @@ $ sudo pacman -S <package>
 - 參考[Udisks - ArchWiki](https://wiki.archlinux.org/index.php/Udisks)
 - Requirements: 已安裝Desktop GUI
 - 步驟：
-    - 下載[udisk2](https://www.archlinux.org/packages/?name=udisks2)：`$ sudo pacman -U udisks2`。
+    - 下載[udisk2](https://www.archlinux.org/packages/?name=udisks2)：`$ sudo pacman -S udisks2`。
     - 打上指令`$ lsblk`，來看usb裝置是在哪個磁區編號。假設usb裝置是在/dev/sdb：
     - mount usb: 打上指令`$ udisksctl mount -b /dev/sdb1`
     - unmount usb: 打上指令`$ udisksctl unmount -b /dev/sdb1`
