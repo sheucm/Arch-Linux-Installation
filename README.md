@@ -461,4 +461,13 @@ Kernel driver in use: nouveau
     - `$ cd glxinfo`
     - `$ makepkg -s`
     - `$ sudo pacman -U glxinfo-8.4.0-1-x86_64.pkg.tar.xz`
-- 檢查。`$ glxinfo | grep direct`。第一行會顯示*direct rendering: Yes*，那就對了。
+- 檢查。`$ glxinfo | grep direct`。
+    - 第一行會顯示*direct rendering: Yes*
+    - 第二行以後，檢查看看是否有類似以下文字：
+    
+    ```bash
+    GL_ARB_direct_state_access, GL_ARB_draw_buffers, 
+    GL_ARB_draw_indirect, GL_ARB_draw_instanced, GL_ARB_enhanced_layouts, 
+    GL_ARB_indirect_parameters, GL_ARB_instanced_arrays, 
+    GL_ARB_map_buffer_range, GL_ARB_multi_bind, GL_ARB_multi_draw_indirect, 
+    ```
