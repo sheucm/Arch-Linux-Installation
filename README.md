@@ -172,6 +172,9 @@
 - 啟動：打上指令`sudo systemctl start <service>`
 - 關閉：打上指令`sudo systemctl stop <service>`
 
+# 系統總更新
+打上指令`$ sudo pacman -Syyu`。
+
 # .profile或.bash_profile
 `~/.profile`或`~/.bash_profile`有點像ubuntu的`~/.bashrc`，可以請系統開機後，就執行這檔案裡的script。
 
