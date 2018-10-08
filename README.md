@@ -419,7 +419,8 @@ $ sudo pacman -S <package>
 - [Easiest way to Install Nvidia 3D Graphics acceleration driver on ArchLinux](https://computingforgeeks.com/easiest-way-to-install-nvidia-3d-graphics-acceleration-driver-on-archlinux/)
 
 
-安裝驅動前，要先將顯卡裝上主機上。
+安裝驅動前，要先將顯卡裝上主機上。（本篇是以顯示卡GTX 1080測試）
+
 
 打上指令來確定一下：
 
