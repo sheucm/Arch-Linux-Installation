@@ -437,7 +437,7 @@ Kernel driver in use: nouveau
 - 如果不是顯示nouveau，而是nvidia，那你應該已經安裝過nvidia驅動了，那本章內容就可以跳過。
 
 [nouveau](https://wiki.archlinux.org/index.php/Nouveau)是nvidia通用顯卡驅動。
-但是我們不要它，因為如果要用到cuda gup硬解加速運算的話，
+但是我們不要它，因為如果要用到cuda gpu硬解加速運算的話，
 要用到nvidia-driver系統的。並且要將原本預設的nouveau driver加入黑名單。
 幸好已經有人整理出安裝流程。
 
