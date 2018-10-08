@@ -348,6 +348,7 @@ $ sudo pacman -S <package>
 - 影片教學參考：[Backup and Restore Your Linux System with rsync](https://www.youtube.com/watch?v=oS5uH0mzMTg) :100: 
 - 事前準備：
     - [格式為Ext4的usb](http://www.eassos.com/how-to/how-to-format-a-flash-drive.php)。
+    - 在arch上安裝[rsync](https://www.archlinux.org/packages/?name=rsync)：`＄ sudo pacman -S rsync`
 - 備份步驟：
     - arch開機，並插入usb
     - `$ lsblk`，來看usb磁區(我的是/dev/sdb1)
