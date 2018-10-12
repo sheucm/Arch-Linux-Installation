@@ -224,6 +224,7 @@
 - unzip （zip解壓指令工具）
 - firefox (火狐瀏覽器）
 - [deepin-screenshot](https://www.archlinux.org/packages/?name=deepin-screenshot) (截圖GUI工具)
+- [gpicview](https://www.archlinux.org/packages/community/x86_64/gpicview/) (圖片閱覽器）
 
 ```bash
 $ sudo pacman -S <package>
