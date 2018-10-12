@@ -142,7 +142,7 @@
 
 可以上[這arch網站](https://www.archlinux.org/packages/)查找自己想要的package是否官方有提供。有的話就可以：
 
-- 安裝：打上指令`pacman -S <repo>:<package_name>`
+- 安裝：打上指令`pacman -S <package_name>`
 - 查找：打上指令`pacman -Sl | grep <package_name>`
 
 若之前有用到ubuntu或其它linus系統，可以看[此table](https://wiki.archlinux.org/index.php/Pacman/Rosetta)可以更快學習pacman指令。
