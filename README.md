@@ -471,3 +471,20 @@ Kernel driver in use: nouveau
     GL_ARB_indirect_parameters, GL_ARB_instanced_arrays, 
     GL_ARB_map_buffer_range, GL_ARB_multi_bind, GL_ARB_multi_draw_indirect, 
     ```
+
+# 安裝防火牆
+- 參考[Uncomplicated Firewall](https://wiki.archlinux.org/index.php/Uncomplicated_Firewall)
+- 安裝：
+    - `$ sudo pacman -S ufw`
+    - `$ systemctl start ufw`
+    - `$ systemctl enable ufw`
+- 基本設定：
+    - `$ sudo ufw default deny`
+    - `$ sudo ufw allow from 192.168.0.0/24`
+    - `$ sudo ufw allow Deluge`
+    - `$ sudo ufw limit SSH`
+- 使用：
+    - 開啟：`$ sudo ufw enable`
+    - 關閉：`$ sudo ufw disable`
+    - 狀況查詢：`$ sudo ufw status`
+    - 指令查詢：`$ ufw --help`
