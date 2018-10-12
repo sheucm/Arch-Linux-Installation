@@ -207,8 +207,7 @@
 - 在視窗上方的選單中，點選"裝置" -> "USB"，選擇自己插入的usb裝置。如此一來，就好比一個usb插入了這台虛擬機器。
 - 檢查：打開終端機，打上指令`$ lsblk`，如果有看到類似sdb、sdc等，看一下容量大小是不是自己的usb大小，是的話就沒錯了。
 
-# 安裝瀏覽器
-- 這裡以安裝chrome為例。
+# 安裝Chrome瀏覽器
 - [參考文章](https://linuxhint.com/install-google-chrome-on-arch-linux/)
 - Requirements: 要安裝git
 - 安裝步驟：
@@ -221,10 +220,10 @@
 # 其它常用安裝
 - git
 - gedit (文字編輯器）
-- wget
-- unzip
-- firefox
-- [deepin-screenshot](https://www.archlinux.org/packages/?name=deepin-screenshot) (screenshot tool)
+- wget （下載指令工具）
+- unzip （zip解壓指令工具）
+- firefox (火狐瀏覽器）
+- [deepin-screenshot](https://www.archlinux.org/packages/?name=deepin-screenshot) (截圖GUI工具)
 
 ```bash
 $ sudo pacman -S <package>
