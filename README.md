@@ -489,3 +489,30 @@ Kernel driver in use: nouveau
     - 關閉：`$ sudo ufw disable`
     - 狀況查詢：`$ sudo ufw status`
     - 指令查詢：`$ ufw --help`
+
+# 調整Xfce Terminal外觀
+- 裝好xfce，預設的terminal就是xfce的。當然你可以換成gnome-terminal、xlterminal等。
+- 這篇以xfce為主。
+- 打開terminal
+- 按menu上的"Edit" -> "Preferences"，之後會出現terminal preferences的視窗
+- 點開標籤"Apperence"：
+    - Font區：
+        - 調整字型、字體大小 （use system font不打勾）。例如：monospace regular 13
+        - Cell Spacing調整字體之上下左右間距。例如：1.10 x-width, 1.15 x-height
+    - Background區：
+        - 可以用預設的Solid
+        - 也可以用自己的圖當背景
+        - 也可以用有點透明的背景。例如：opacity: 0.95
+- 點開標籤"Colors"：
+    - 最底下"Presets":
+        - 可以選一些它調過的外觀。例如：Dark Pastels
+- 這樣設定完應該比原本好看多了
+
+# 換背景
+- 可能會覺得桌面圖案那隻老鼠看得很煩（？）
+- 可以到這網站[Desktop background pictures](https://unsplash.com/search/photos/desktop-background)來下載所想要的桌面
+- 再將圖片放到`/usr/share/backgrounds/xfce`
+- 對桌面點右鍵，點"Desktop Settings"
+- 在Background標籤中，應該就能看到剛抓下來的背景圖
+- 點它，按close關閉
+- 新桌面完成。
