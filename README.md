@@ -539,3 +539,4 @@ Kernel driver in use: nouveau
         - enp3s0： ethernet。如果你是用有線網路，network device就是此名稱。
         - wlp4s1： 無線網路。如果你是用無線網路，network device就是此名稱。
         
+    - 全部安裝完後，如果要修改一些常用的內建系統快捷鍵，可以點開"whisker menu"（藍色圓形icon)，搜尋打上"Window manager"，然後點開標籤"Keyboard"，此清單都是一些常用的快捷鍵。例如："Show Desktop"。
