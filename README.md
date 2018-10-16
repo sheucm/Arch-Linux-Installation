@@ -508,6 +508,15 @@ Kernel driver in use: nouveau
         - 可以選一些它調過的外觀。例如：Dark Pastels
 - 這樣設定完應該比原本好看多了
 
+# 設定terminal快捷鍵
+- 點開左上角的Application -〉 "Settings" -> "Settings Manager"
+- 點開標籤"Application Shortcuts"
+- 按底下的"Add"
+- 打上/usr/bin/xfce4-terminal，按OK
+- 再來它要求要設定快捷鍵，請按鍵盤按鍵ctrl+alt+t
+- 這樣就設定好了，按Close關閉keyboard設定視窗
+- 完成
+
 # 換背景
 - 可能會覺得桌面圖案那隻老鼠看得很煩（？）
 - 可以到這網站[Desktop background pictures](https://unsplash.com/search/photos/desktop-background)來下載所想要的桌面
