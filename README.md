@@ -540,3 +540,14 @@ Kernel driver in use: nouveau
         - wlp4s1： 無線網路。如果你是用無線網路，network device就是此名稱。
         
     - 全部安裝完後，如果要修改一些常用的內建系統快捷鍵，可以點開"whisker menu"（藍色圓形icon)，搜尋打上"Window manager"，然後點開標籤"Keyboard"，此清單都是一些常用的快捷鍵。例如："Show Desktop"。
+
+# Arch上可以用類似微軟Office嗎？
+- 答案是可以的。
+- 安裝libre-office。它可以開啟ms-doc系列的文件，也可以存成其格式，重點是**完全免費**!!
+- 打上`$ pacman -Sl | grep libreoffice`，就會出現很多套件，有libreoffice-still和libreoffice-fresh，兩種都可以，挑一個下載就好，剩下就是看語系，以台灣中文來說，叫作zh-tw，所以如果挑fresh的話，最終下載的指令是
+
+    ```bash
+    $ sudo pacman -S libreoffice-fresh-zh-tw
+    ```
+
+- 完成
