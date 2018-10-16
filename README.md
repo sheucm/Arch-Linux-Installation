@@ -527,4 +527,8 @@ Kernel driver in use: nouveau
 - 新桌面完成。
 
 # 進階xfce外觀設定
+- Requirements:
+    - 將所有有關xfce的套件全裝
+    - `$ pacman -Sl | grep xfce`，所列出來的套件名稱都安裝
+    - 安裝指令`$ sudo pacman -S <pkg_name>`
 - 請參考影片[Customise XFCE desktop | arch linux](https://www.youtube.com/watch?v=M2jy5J3Y-vw)
