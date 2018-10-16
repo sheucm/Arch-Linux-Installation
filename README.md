@@ -525,3 +525,6 @@ Kernel driver in use: nouveau
 - 在Background標籤中，應該就能看到剛抓下來的背景圖
 - 點它，按close關閉
 - 新桌面完成。
+
+# 進階xfce外觀設定
+- 請參考影片[Customise XFCE desktop | arch linux](https://www.youtube.com/watch?v=M2jy5J3Y-vw)
