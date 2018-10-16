@@ -532,3 +532,10 @@ Kernel driver in use: nouveau
     - `$ pacman -Sl | grep xfce`，所列出來的套件名稱都安裝
     - 安裝指令`$ sudo pacman -S <pkg_name>`
 - 請參考影片[Customise XFCE desktop | arch linux](https://www.youtube.com/watch?v=M2jy5J3Y-vw)
+- 補充：
+    - 影片裡面有教學如何設定network，需要network device名稱。   
+      在arch中預設是不能使用ifconfig，以`$ ip addr`取代之。或是可以使用`$ lspci -v`也可以。這裡以*ip addr*指令為例。打上此指令，可以看到三個名稱：
+        - lo： locahost。這不用理它。
+        - enp3s0： ethernet。如果你是用有線網路，network device就是此名稱。
+        - wlp4s1： 無線網路。如果你是用無線網路，network device就是此名稱。
+        
