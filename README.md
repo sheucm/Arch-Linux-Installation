@@ -543,7 +543,7 @@ Kernel driver in use: nouveau
 
 # Arch上可以用類似微軟Office嗎？
 - 答案是可以的。
-- 安裝libre-office。它可以開啟ms-doc系列的文件，也可以存成其格式，重點是**完全免費**!!
+- 安裝[libre-office](https://wiki.archlinux.org/index.php/LibreOffice)。它可以開啟ms-doc系列的文件，也可以存成其格式，重點是**完全免費**!!
 - 打上`$ pacman -Sl | grep libreoffice`，就會出現很多套件，有libreoffice-still和libreoffice-fresh，兩種都可以，挑一個下載就好，剩下就是看語系，以台灣中文來說，叫作zh-tw，所以如果挑fresh的話，最終下載的指令是
 
     ```bash
