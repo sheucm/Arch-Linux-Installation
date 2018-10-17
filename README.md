@@ -98,10 +98,13 @@
 
 ### Part 3: 設定
 - 設定root密碼，打上指令`passwd`，打上自己的密碼。
-- 打上指令`nano /etc/locale.gen`，利用nano或vim編輯器來編輯locale.gen檔案，按page-down鍵到最下面，找到zh_TW，將#拿掉。然後儲存離開。
+- 打上指令`nano /etc/locale.gen`，利用nano或vim編輯器來編輯locale.gen檔案，找到以下語系，將#拿掉，並儲存離開：
+    - zh_TW.big5
+    - zh_TW.utf8
+    - en_US.iso88591
+    - en_US.utf8
 - 打上指令`locale-gen`，來產生locale。
 - 移動到`/usr/share/zoneinfo/`目錄，可以看到很多時區。以台灣來說是屬於`Asia/Taipei`。所以請打上指令`ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime`。
-
 
 - 打上指令`vim /etc/hostname`，進入該檔案打上自己的hostname(自己取)，儲存離開。
 - 打上指令`exit`，離開磁碟Linux系統
@@ -263,7 +266,19 @@ $ sudo pacman -S <package>
         - Reboot your arch. `$ reboot`
         - Finished Installing that ttf !
 - Reboot your arch. `$ reboot`
-    
+
+# 設定圖形化中文介面
+- 前言：如果覺得arch系統都是英文顯示，想要改成中文，可以參考這篇的設定
+- 參考文章：
+    - [Locale - ArchWiki](https://wiki.archlinux.org/index.php/locale)
+    - [Localization/Traditional Chinese](https://wiki.archlinux.org/index.php/Localization/Traditional_Chinese_(%E6%AD%A3%E9%AB%94%E4%B8%AD%E6%96%87))
+- Requirements: 要安裝中文字型。
+- 設定中文介面步驟：
+    - 打上指令 `$ locale -a`，檢查是否出現zh_TW.utf8。沒有的話，請在按照*參考文章*內的說明來產生中文語系。
+    - 編輯/etc/locale.conf
+    - 將它改成`LANG=zh_TW.UTF-8`
+    - 重新開機
+
 # Install Chinese Keyboard
 - [Arch Fxitx](https://wiki.archlinux.org/index.php/Fcitx)
 - Other Article: [Installing fcitx](http://echoyun.com/2017/10/02/installing-fcitx-chinese-ime-arch-linux/)
