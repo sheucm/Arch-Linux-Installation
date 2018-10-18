@@ -147,6 +147,7 @@
 
 - 安裝：打上指令`pacman -S <package_name>`
 - 查找：打上指令`pacman -Sl | grep <package_name>`
+- 解除安裝：打上指令`pacman -Rs <package_name>`
 
 若之前有用到ubuntu或其它linus系統，可以看[此table](https://wiki.archlinux.org/index.php/Pacman/Rosetta)可以更快學習pacman指令。
 
@@ -158,6 +159,12 @@
 - 製作安裝檔。打下指令`makepkg -s`。最後會在目錄下看到類似<package>.pkg.tar.xz的安裝檔。
 - 安裝。打下指令`sudo pacman -U <package>.pkg.tar.xz`
 - 安裝完成。
+- 解除安裝：打上指令`pacman -Rsn <package_name>`
+
+### 詳細有關於pacman
+- `$ man pacman`
+- `$ pacman --help`
+- [Pacman - ArchWiki](https://wiki.archlinux.org/index.php/pacman)
 
 # 安裝Desktop GUI
 - 可以參考此影片：[After a Minimal Linux Install: Graphical Envionment and Users](https://www.youtube.com/watch?v=nSHOb8YU9Gw) :thumbsup\_tone3: 
