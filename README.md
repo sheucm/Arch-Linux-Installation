@@ -573,3 +573,6 @@ Kernel driver in use: nouveau
     ```
 
 - 完成
+
+# 觀看硬碟使用率
+可以使用指令： `$dh -h`。
