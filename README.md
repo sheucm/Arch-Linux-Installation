@@ -1,5 +1,5 @@
 # 前言
-這分檔案是給第一次要安裝Arch的人看的。
+這份檔案是給第一次要安裝Arch的人看的。
 
 # 目錄
 - [下載iso安裝檔](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E4%B8%8B%E8%BC%89iso%E5%AE%89%E8%A3%9D%E6%AA%94)
