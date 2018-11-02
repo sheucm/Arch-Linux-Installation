@@ -11,7 +11,7 @@
 - [安裝Desktop GUI](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%AE%89%E8%A3%9Ddesktop-gui)
 - [啟動或關閉Service](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%95%9F%E5%8B%95%E6%88%96%E9%97%9C%E9%96%89service)
 - [系統總更新](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E7%B3%BB%E7%B5%B1%E7%B8%BD%E6%9B%B4%E6%96%B0)
-- ~/.bashrc
+- [~/.bashrc](https://github.com/sheucm/Arch-Installation/blob/master/README.md#bashrc]
 - [VirtualBox共用資料夾設定](https://github.com/sheucm/Arch-Installation/blob/master/README.md#virtualbox%E5%85%B1%E7%94%A8%E8%B3%87%E6%96%99%E5%A4%BE%E8%A8%AD%E5%AE%9A)
 - [VirtualBox雙向剪貼](https://github.com/sheucm/Arch-Installation/blob/master/README.md#virtualbox%E9%9B%99%E5%90%91%E5%89%AA%E8%B2%BC)
 - [VirtualBox插入Usb](https://github.com/sheucm/Arch-Installation/blob/master/README.md#virtualbox%E6%8F%92%E5%85%A5usb)
