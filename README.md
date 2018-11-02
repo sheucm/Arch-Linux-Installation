@@ -3,6 +3,35 @@
 
 # 目錄
 - [下載iso安裝檔](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E4%B8%8B%E8%BC%89iso%E5%AE%89%E8%A3%9D%E6%AA%94)
+- [Arch參考文件](https://github.com/sheucm/Arch-Installation/blob/master/README.md#arch%E5%8F%83%E8%80%83%E6%96%87%E4%BB%B6)
+- [安裝Arch Linux](https://github.com/sheucm/Arch-Installation/blob/master/README.md#arch%E5%8F%83%E8%80%83%E6%96%87%E4%BB%B6)
+- [Add User](https://github.com/sheucm/Arch-Installation/blob/master/README.md#add-user)
+- [Delete User](https://github.com/sheucm/Arch-Installation/blob/master/README.md#delete-user)
+- [安裝package](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%AE%89%E8%A3%9Dpackage)
+- [安裝Desktop GUI](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%AE%89%E8%A3%9Ddesktop-gui)
+- [啟動或關閉Service](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%95%9F%E5%8B%95%E6%88%96%E9%97%9C%E9%96%89service)
+- [系統總更新](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E7%B3%BB%E7%B5%B1%E7%B8%BD%E6%9B%B4%E6%96%B0)
+- ~/.bashrc
+- [VirtualBox共用資料夾設定](https://github.com/sheucm/Arch-Installation/blob/master/README.md#virtualbox%E5%85%B1%E7%94%A8%E8%B3%87%E6%96%99%E5%A4%BE%E8%A8%AD%E5%AE%9A)
+- [VirtualBox雙向剪貼](https://github.com/sheucm/Arch-Installation/blob/master/README.md#virtualbox%E9%9B%99%E5%90%91%E5%89%AA%E8%B2%BC)
+- [VirtualBox插入Usb](https://github.com/sheucm/Arch-Installation/blob/master/README.md#virtualbox%E6%8F%92%E5%85%A5usb)
+- [安裝Chrome瀏覽器](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%AE%89%E8%A3%9Dchrome%E7%80%8F%E8%A6%BD%E5%99%A8)
+- [其他常用安裝](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%85%B6%E5%AE%83%E5%B8%B8%E7%94%A8%E5%AE%89%E8%A3%9D)
+- [安裝中文字體](https://github.com/sheucm/Arch-Installation/blob/master/README.md#install-chinese-fonts)
+- [設定中文圖形化介面](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E8%A8%AD%E5%AE%9A%E5%9C%96%E5%BD%A2%E5%8C%96%E4%B8%AD%E6%96%87%E4%BB%8B%E9%9D%A2)
+- [安裝中文輸入法](https://github.com/sheucm/Arch-Installation/blob/master/README.md#install-chinese-keyboard)
+- [設定時間](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E8%A8%AD%E5%AE%9A%E6%99%82%E9%96%93)
+- [設定音訊輸出與麥克風輸入](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E8%A8%AD%E5%AE%9A%E9%9F%B3%E8%A8%8A%E8%BC%B8%E5%87%BA%E8%88%87%E9%BA%A5%E5%85%8B%E9%A2%A8%E8%BC%B8%E5%85%A5)
+- [安裝Usb介面](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%AE%89%E8%A3%9Dusb%E4%BB%8B%E9%9D%A2)
+- [系統備份與還原](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%82%99%E4%BB%BD%E8%88%87%E9%82%84%E5%8E%9F)
+- [安裝Nvidia 3D加速Driver](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%AE%89%E8%A3%9Dnvidia-3d-%E5%8A%A0%E9%80%9F-driver)
+- [安裝防火牆](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%AE%89%E8%A3%9D%E9%98%B2%E7%81%AB%E7%89%86)
+- [調整Xfce終端機外觀](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E8%AA%BF%E6%95%B4xfce-terminal%E5%A4%96%E8%A7%80)
+- [設定終端機快捷鍵](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E8%A8%AD%E5%AE%9Aterminal%E5%BF%AB%E6%8D%B7%E9%8D%B5)
+- [更換桌面背景](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E6%8F%9B%E8%83%8C%E6%99%AF)
+- [進階Xfce外觀設定](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E9%80%B2%E9%9A%8Exfce%E5%A4%96%E8%A7%80%E8%A8%AD%E5%AE%9A)
+- [Arch上可以用類似微軟Office嗎](https://github.com/sheucm/Arch-Installation/blob/master/README.md#arch%E4%B8%8A%E5%8F%AF%E4%BB%A5%E7%94%A8%E9%A1%9E%E4%BC%BC%E5%BE%AE%E8%BB%9Foffice%E5%97%8E)
+- [觀看硬碟使用率](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E8%A7%80%E7%9C%8B%E7%A1%AC%E7%A2%9F%E4%BD%BF%E7%94%A8%E7%8E%87)
 
 
 # 下載iso安裝檔
@@ -190,8 +219,9 @@
 更新所有使用從官方下載的套件。    
 打上指令`$ sudo pacman -Syyu`。
 
-# .profile或.bash_profile
-`~/.profile`或`~/.bash_profile`有點像ubuntu的`~/.bashrc`，可以請系統開機後，就執行這檔案裡的script。
+# ~/.bashrc
+`~/.bashrc`可以請系統開機後，就執行這檔案裡的script。
+例如我想要在這裡設定alias、環境變數等。
 
 # VirtualBox共用資料夾設定
 - 先在本機上新增一個要共用的資料夾。例如: `D:\VirtualBoxShareArch`
