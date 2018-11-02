@@ -1,6 +1,10 @@
 # 前言
 這分檔案是給第一次要安裝Arch的人看的。
 
+# 目錄
+- [下載iso安裝檔](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E4%B8%8B%E8%BC%89iso%E5%AE%89%E8%A3%9D%E6%AA%94)
+
+
 # 下載iso安裝檔
 - 請到[此官網](https://www.archlinux.org/download/)下載torrent檔，利用torrent軟體下載iso檔。
 - 將iso檔燒成光碟或usb，將光碟機或usb成為開機第一優先順序
