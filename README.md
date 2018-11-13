@@ -32,7 +32,7 @@
 - [進階Xfce外觀設定](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E9%80%B2%E9%9A%8Exfce%E5%A4%96%E8%A7%80%E8%A8%AD%E5%AE%9A)
 - [Arch上可以用類似微軟Office嗎](https://github.com/sheucm/Arch-Installation/blob/master/README.md#arch%E4%B8%8A%E5%8F%AF%E4%BB%A5%E7%94%A8%E9%A1%9E%E4%BC%BC%E5%BE%AE%E8%BB%9Foffice%E5%97%8E)
 - [觀看硬碟使用率](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E8%A7%80%E7%9C%8B%E7%A1%AC%E7%A2%9F%E4%BD%BF%E7%94%A8%E7%8E%87)
-
+- [增加Network DNS](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E5%A2%9E%E5%8A%A0network-dns)
 
 # 下載iso安裝檔
 - 請到[此官網](https://www.archlinux.org/download/)下載torrent檔，利用torrent軟體下載iso檔。
