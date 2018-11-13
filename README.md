@@ -269,6 +269,9 @@
 - firefox (火狐瀏覽器）
 - [deepin-screenshot](https://www.archlinux.org/packages/?name=deepin-screenshot) (截圖GUI工具)
 - [gpicview](https://www.archlinux.org/packages/community/x86_64/gpicview/) (圖片閱覽器）
+- [net-tools](https://www.archlinux.org/packages/core/x86_64/net-tools/)(ifconfig指令)
+- [nmap](https://www.archlinux.org/packages/extra/x86_64/nmap/)(nmap指令）
+- [bind-tools](https://www.archlinux.org/packages/extra/x86_64/bind-tools/)(dig指令）
 
 ```bash
 $ sudo pacman -S <package>
