@@ -1,5 +1,17 @@
 # 前言
-這份檔案是給第一次要安裝Arch的人看的。
+這份檔案是給第一次要安裝Arch的人看的。   
+
+Arch是什麼？
+
+Arch是一個**什麼都要自己來安裝**的Linux作業系統，使用它的人被人稱之為"怪咖"，因為怪咖享受什麼都自己DIY的樂趣。
+
+其實除了被人稱之為怪咖的好處(疑?)，Arch有其與其它Linux作業系統不同的地方，即：
+- *所有Package皆是最新版本*
+- *一個指令更新所有Package到最新*
+- *環境最乾淨* (因為重頭到尾都是自己安裝的)
+
+尤於這三個大特點，使得Arch作業系統還是廣受一票人使用。
+
 
 # 目錄
 - [下載iso安裝檔](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E4%B8%8B%E8%BC%89iso%E5%AE%89%E8%A3%9D%E6%AA%94)
