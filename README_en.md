@@ -15,7 +15,7 @@ These distinctive features, along with its user-friendly nature, make Arch a pop
 
 
 
-# 目錄
+# Catalog
 - [Download ISO files](https://github.com/sheucm/Arch-Installation/blob/master/README.md#%E4%B8%8B%E8%BC%89iso%E5%AE%89%E8%A3%9D%E6%AA%94)
 - [Arch Reference](https://github.com/sheucm/Arch-Installation/blob/master/README.md#arch%E5%8F%83%E8%80%83%E6%96%87%E4%BB%B6)
 - [Install Arch Linux](https://github.com/sheucm/Arch-Installation/blob/master/README.md#arch%E5%8F%83%E8%80%83%E6%96%87%E4%BB%B6)
